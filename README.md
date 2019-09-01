@@ -1,10 +1,7 @@
-# README
-###################
-blog - Test
-###################
+# blog - Test
 
 This is my first project with rails, simple blog with CRUD fonctionalities.
-
+# 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
