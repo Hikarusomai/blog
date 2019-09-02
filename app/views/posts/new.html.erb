@@ -1,6 +1,7 @@
 <h1>Add Post</h1>
-<%= form_for :post, url: post_path do |f| %>
-	
+#<%= form_for :post, url: post_path do |f| %>
+<%= form_with scope: :post, url: post_path, local: true do |form| %>
+
 	<% if @post.errors.any? %>
 		<% @post.errors.full_messages.each do |msg| %>
 			<div class="alert alert-danger"><%= msg %></div>
@@ -20,3 +21,5 @@
 		<%= f.submit({:class => 'btn btn-primary'}) %>
 	</p>
 <% end %>
+
+<%= link_to 'Back', posts_path, :class => 'btn btn-secondary' %>
