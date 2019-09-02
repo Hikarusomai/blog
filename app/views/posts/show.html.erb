@@ -2,10 +2,12 @@
 <p><%= @post.body %></p>
 <hr>
 <%= link_to "Edit", edit_post_path(@post), :class => 'btn btn-secondary' %>
-<%= link_to "Delete", post_path(@post),
+<%= button_to "Delete", post_path(@post),
 	method: :delete,
 	data: {confirm: 'Are you sure?'},
 	:class => 'btn btn-danger' %>
+
+
 <%= link_to 'Back', posts_path, :class => 'btn btn-primary' %>
 
 <hr>
